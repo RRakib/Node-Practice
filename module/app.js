@@ -1,3 +1,4 @@
-let modul = require("./module")
+let modules = require("./module")
 
-console.log(modul(["A" , "B" , "C" , "D"]))
+console.log(modules.modul("4"))
+console.log(modules.strng("Rakib"))
