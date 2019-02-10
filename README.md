@@ -6,3 +6,6 @@ You can also get into node by writting node in the console then write JavaScript
 
 # Clone The Code
 Everything inside is well documented. You can easily understand how they are working.
+
+# Module
+Contains custom modules and some global modules
