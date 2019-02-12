@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/RRakib/Node-Practice/issues"
   },
-  "homepage": "https://github.com/RRakib/Node-Practice#readme"
+  "homepage": "https://github.com/RRakib/Node-Practice#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
 }

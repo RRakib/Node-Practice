@@ -38,7 +38,7 @@ let server = http.createServer(function(req , res){
             fs.createReadStream("../JSON/json.json").pipe(res)
     }
     else{
-        res.writeHead(200 , {
+        res.writeHead(404 , {
             "Content-Type" : "text/html"
         })
         fs.createReadStream("../HTML/notFound.html").pipe(res)
