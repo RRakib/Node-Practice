@@ -1,18 +1,24 @@
 let express = require("express");
 
 let app = express();
-app.set("view engine" , "ejs")
+app.set("view engine" , "ejs");
+
+app.use("/CSS" , express.static("../CSS"))
 
 app.get("/" , (req , res) => {
-    res.sendFile("index.html" , {root : "../HTML"})
+    res.render("index.ejs")
 })
 app.get("/contact" , (req , res) => {
-    res.sendFile("contact.html" , {root : "../HTML"})
+    res.render("contact.ejs")
+})
+app.get("/about", (req,res) =>{
+    res.render("about.ejs")
 })
 app.get("/profile/:id" , (req , res) => {
     let data = {
         job : "Web Developer",
-        age : 23
+        age : 23,
+        hobbies : ["eating" , "coding" , "sleeping"]
     }
     res.render("template" , {
         person : req.params.id,
